@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="card">
+    <h2>Reported Posts</h2>
+    <table class="reported-posts-table">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Post By</th>
+                <th>Link</th>
+                <th>Report Count</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for reported_post in reported_posts %}
+            <tr>
+                <td>{{ reported_post.description }}</td>
+                <td>{{ reported_post.user.username }}</td>
+                <td>{{ reported_post.link }}</td>
+                <td>{{ reported_post.report_count }}</td>
+                <td>
+                    <button onclick="deletePost('{{ reported_post.id }}')">Delete</button>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="5">No reported posts</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/dashboard.js' %}"></script>
+{% endblock %}

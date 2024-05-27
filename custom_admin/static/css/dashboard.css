@@ -1,0 +1,98 @@
+.card {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 50px 100px 50px 100px;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+.reported-posts-table {
+    width: 100%;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.reported-posts-table th,
+.reported-posts-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    max-width: 200px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+
+.reported-posts-table th {
+    background-color: #f2f2f2;
+}
+
+.reported-posts-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.reported-posts-table th:nth-child(1),
+.reported-posts-table td:nth-child(1) {
+    width: 35%;
+}
+
+.reported-posts-table th:nth-child(2),
+.reported-posts-table td:nth-child(2) {
+    width: 20%;
+}
+
+.reported-posts-table th:nth-child(3),
+.reported-posts-table td:nth-child(3) {
+    width: 20%;
+
+}
+
+.reported-posts-table th:nth-child(n+4),
+.reported-posts-table td:nth-child(n+4) {
+    width: 12%;
+
+}
+
+.reported-posts-table button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reported-posts-table button:hover {
+    background-color: #e60000;
+}
+
+
+.custom-popup {
+    position: fixed;
+    top: 148px;
+    right: 20px;
+    transform: translate(-50%, 0%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 100;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-popup button {
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}

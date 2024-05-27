@@ -1,0 +1,32 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+django-filter = "*"
+python-dotenv = "*"
+psycopg2-binary = "*"
+dataclass-type-validator = "*"
+drf-spectacular = "*"
+django-debug-toolbar = "*"
+sentry-sdk = "*"
+djangorestframework-simplejwt = "*"
+django-sendgrid-v5 = "*"
+isort = "*"
+black = "*"
+minio = "*"
+django-storages = "*"
+boto3 = "*"
+stripe = "*"
+pygithub = "*"
+requests = "*"
+celery = "*"
+redis = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
